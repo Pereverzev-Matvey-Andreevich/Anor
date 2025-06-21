@@ -1,0 +1,130 @@
+{
+  "locationNames": {
+    "TRADING_CENTER": "Trading Center",
+    "MINE": "Mines",
+    "CITY_CENTER": "City Center",
+    "SEWER": "Sewers",
+    "LAB": "Laboratory",
+    "CORE_SYSTEM": "Core System"
+  },
+  "attackNames": {
+    "MELEE": "Melee",
+    "RANGED": "Ranged",
+    "MIXED": "Mixed"
+  },
+  "enemyNames": {
+    "SILICON": "Silicon Life",
+    "PLANTER": "Planter",
+    "AIROBOT": "AI Robot",
+    "BLAME": "Blame"
+  },
+  "enemyData": {
+    "SILICON": {
+      "hp": 200,
+      "damage": 60,
+      "playerDamage": {
+        "MELEE": 30,
+        "RANGED": 120,
+        "MIXED": 70
+      }
+    },
+    "PLANTER": {
+      "hp": 300,
+      "damage": 30,
+      "playerDamage": {
+        "MELEE": 150,
+        "RANGED": 80,
+        "MIXED": 65
+      }
+    },
+    "AIROBOT": {
+      "hp": 150,
+      "damage": 100,
+      "playerDamage": {
+        "MELEE": 25,
+        "RANGED": 40,
+        "MIXED": 75
+      }
+    },
+    "BLAME": {
+      "hp": 700,
+      "damage": 0
+    }
+  },
+  "boss": {
+    "hp": 700,
+    "forms": {
+      "ARMORED": {
+        "damage": 45,
+        "playerDamage": {
+          "MELEE": 150,
+          "RANGED": 80,
+          "MIXED": 65
+        }
+      },
+      "ATTACK": {
+        "damage": 120,
+        "playerDamage": {
+          "MELEE": 70,
+          "RANGED": 85,
+          "MIXED": 110
+        }
+      },
+      "FAST": {
+        "damage": 80,
+        "playerDamage": {
+          "MELEE": 50,
+          "RANGED": 150,
+          "MIXED": 90
+        }
+      }
+    }
+  },
+  "ui": {
+    "choose_start_location": "Choose your starting location:",
+    "inventory_title": "--- Inventory ---",
+    "medkit_count": "MedKit: %d",
+    "use_medkit_question": "Use MedKit? [1]Yes [2]No",
+    "no_medkits": "No MedKits available!",
+    "medkit_used": "Recovered 150 HP. Current HP: %d",
+    "location_header": "--- %s ---",
+    "enemy_appears": "An enemy %s appears!",
+    "combat_status": "Your HP: %d | Enemy HP: %d",
+    "choose_action": "Choose action:",
+    "attack_damage": "You deal %d damage with %s.",
+    "enemy_damage": "%s deals %d damage.",
+    "defeated": "You have been defeated...",
+    "enemy_defeated": "Enemy defeated!",
+    "medkit_dropped": "MedKit dropped!",
+    "chip_found": "You found a Chip! Total: %d/5",
+    "access_denied": "Access Denied: You need 5 chips to enter Core System.",
+    "boss_change": "Blame changes to %s type!",
+    "boss_damage": "Blame deals %d damage.",
+    "victory": "You defeated Blame and reveal the truth: the system was corrupted by...",
+    "defeat": "You have been defeated by Blame...",
+    "game_over": "Game Over.",
+    "choose_next_location": "Choose next location or action:",
+    "go_to_location": "Go to %s",
+    "open_inventory": "Open inventory",
+    "no_items": "No items to use.",
+    "intro_message": "You wake up and hear a voice in your head: \"The system is broken. The administrator is no longer responding. The infection is spreading. Find the 5 chips and open the Core.\""
+  },
+  "locationDescriptions": {
+    "TRADING_CENTER": "Endless floors of ruined shops, advertising holograms flickering in the dark. The air is filled with dust and the static noise of long-dead broadcasts.",
+    "MINE": "Huge vertical tunnels that go down for kilometers. The elevators are not working — only fragments of bridges and gravity platforms. Any mistake and I might fall to the bottom and not get out, I have to act carefully.",
+    "CITY_CENTER": "The architecture resembles a cathedral mixed with a processor. There are tall, empty halls and dead terminals. There was once an Administrator here.",
+    "SEWER": "Giant pipes filled with black liquid (nano-waste?). Everything is covered with biomechanical mold.",
+    "LAB": "Glass capsules with failed clones, screens with cryptography. They were experimenting with the core here.",
+    "CORE_SYSTEM": "A spherical room in the center of the Megastructure. Walls are screens showing endless data. In the center is the \"Administrator\", all his blames, but this is not a human, but an artificial intelligence stuck in a cycle of errors. It looks like a giant face made of light, disintegrating into pixels."
+  },
+  "player": {
+    "start_hp": 500,
+    "medkit_heal": 150,
+    "start_medkits": 3
+  },
+  "game": {
+    "inventory_size": 15,
+    "medkit_drop_chance": 0.33,
+    "chips_required": 5
+  }
+}
